@@ -1204,6 +1204,20 @@ texture = ExtResource("2_mdy1u")
 region_enabled = true
 region_rect = Rect2(48, 1216, 32, 48)
 
+[node name="Sprite2D" type="Sprite2D" parent="gallery" unique_id=1331556878]
+position = Vector2(-885, -283)
+scale = Vector2(2.2500002, 2.7812502)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(48, 1216, 64, 48)
+
+[node name="Sprite2D2" type="Sprite2D" parent="gallery" unique_id=1643103258]
+position = Vector2(-883, -176)
+scale = Vector2(-3.6403627, 2.9264746)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(0, 784, 16, 32)
+
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=2074516992]
 script = ExtResource("2_8naax")
 
