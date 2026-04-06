@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://c6hsuqjxd54rx"]
+
+[ext_resource type="Script" uid="uid://cmyp28i78e74y" path="res://scripts/MainPuzzle.gd" id="1_5q5i5"]
+
+[node name="MainPuzzle" type="Node2D" unique_id=895808489]
+script = ExtResource("1_5q5i5")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1727755921]

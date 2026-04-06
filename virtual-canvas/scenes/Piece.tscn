@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bntyh4585f06w"]
+
+[ext_resource type="Script" uid="uid://cux2bk16uakot" path="res://scripts/Piece.gd" id="1_gksgf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tk1p6"]
+
+[node name="Piece" type="Area2D" unique_id=934827126]
+script = ExtResource("1_gksgf")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=559707802]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1543691396]
+shape = SubResource("RectangleShape2D_tk1p6")
