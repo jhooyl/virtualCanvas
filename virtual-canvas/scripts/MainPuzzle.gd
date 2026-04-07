@@ -1,7 +1,6 @@
 extends Node2D
 
 const PIECE_SCENE = preload("res://scenes/Piece.tscn")
-const IMAGE = preload("res://assets/puzzle1.jpg")
 
 const COLS = 3
 const ROWS = 3
@@ -14,6 +13,8 @@ func _ready():
 	_generate_puzzle()
 
 func _generate_puzzle():
+	var IMAGE = load(PuzzleData.get_current_image())
+	
 	var piece_w = IMAGE.get_width()  / COLS   # 564/3 = 188
 	var piece_h = IMAGE.get_height() / ROWS   # 450/3 = 150
 

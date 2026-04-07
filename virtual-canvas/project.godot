@@ -15,6 +15,10 @@ run/main_scene="uid://c5u48d72tx1nt"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://assets/icon.svg"
 
+[autoload]
+
+PuzzleData="*uid://bsdo3jk0hoa0a"
+
 [input]
 
 move_up={
