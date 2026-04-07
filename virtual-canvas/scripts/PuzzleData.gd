@@ -1,9 +1,9 @@
 extends Node
 
 var puzzles = [
-	"res://assets/puzzle1.jpg",
-	"res://assets/puzzle2.jpg",
-	"res://assets/puzzle3.jpg"
+	"res://assets/paintings/puzzle1.jpg",
+	"res://assets/paintings/puzzle2.jpg",
+	"res://assets/paintings/puzzle3.jpg"
 ]
 
 var current_index := 0
