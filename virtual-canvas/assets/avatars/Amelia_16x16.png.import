@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://htmfb841m478"
-path="res://.godot/imported/Amelia_16x16.png-c8af37fe96066cbe6b69ac19264f306f.ctex"
+path="res://.godot/imported/Amelia_16x16.png-fc8075d7cb48f453948baba4b85dbac3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Amelia_16x16.png"
-dest_files=["res://.godot/imported/Amelia_16x16.png-c8af37fe96066cbe6b69ac19264f306f.ctex"]
+source_file="res://assets/avatars/Amelia_16x16.png"
+dest_files=["res://.godot/imported/Amelia_16x16.png-fc8075d7cb48f453948baba4b85dbac3.ctex"]
 
 [params]
 

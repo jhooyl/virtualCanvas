@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dd74susdivwbs"
-path="res://.godot/imported/Amelia_run_16x16.png-1a513d8b0b5eab72fa8b87ba1cef0e0a.ctex"
+uid="uid://dpowt881pub12"
+path="res://.godot/imported/Alex_idle_anim_16x16.png-495bb2891d35d43bfd01ddd9f82e3850.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Amelia_run_16x16.png"
-dest_files=["res://.godot/imported/Amelia_run_16x16.png-1a513d8b0b5eab72fa8b87ba1cef0e0a.ctex"]
+source_file="res://assets/avatars/Alex_idle_anim_16x16.png"
+dest_files=["res://.godot/imported/Alex_idle_anim_16x16.png-495bb2891d35d43bfd01ddd9f82e3850.ctex"]
 
 [params]
 
