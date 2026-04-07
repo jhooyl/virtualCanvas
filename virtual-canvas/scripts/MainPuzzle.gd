@@ -40,7 +40,6 @@ var dialogue_final = [
 ]
 
 const PIECE_SCENE = preload("res://scenes/Piece.tscn")
-const IMAGE = preload("res://assets/puzzle1.jpg")
 
 const COLS = 3
 const ROWS = 3
@@ -54,8 +53,17 @@ func _ready():
 	dialogue.start_dialogue(full_dialogue)
 
 func _generate_puzzle():
+<<<<<<< HEAD
 	var piece_w = IMAGE.get_width() / COLS
 	var piece_h = IMAGE.get_height() / ROWS
+=======
+	var IMAGE = load(PuzzleData.get_current_image())
+	
+	var piece_w = IMAGE.get_width()  / COLS   # 564/3 = 188
+	var piece_h = IMAGE.get_height() / ROWS   # 450/3 = 150
+
+	var viewport_size = Vector2(1152, 648)    # ← taille fixe de ta fenêtre
+>>>>>>> b7c4ca910b1b7f92ff51095e8ee1b2ef9a85caed
 
 	var viewport_size = Vector2(1152, 648)
 	var grid_origin = Vector2(

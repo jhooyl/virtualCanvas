@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpowt881pub12"
-path="res://.godot/imported/Alex_idle_anim_16x16.png-cddb5c0ac2266e4d245c2280b6c9a321.ctex"
+uid="uid://b56dk32pm2fx6"
+path="res://.godot/imported/icon.svg-33a5e5164a0a9ba12eb5624e5de5a38b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Alex_idle_anim_16x16.png"
-dest_files=["res://.godot/imported/Alex_idle_anim_16x16.png-cddb5c0ac2266e4d245c2280b6c9a321.ctex"]
+source_file="res://assets/other/icon.svg"
+dest_files=["res://.godot/imported/icon.svg-33a5e5164a0a9ba12eb5624e5de5a38b.ctex"]
 
 [params]
 
@@ -38,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

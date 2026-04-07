@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dag0mh5woq3ce"
-path="res://.godot/imported/Interiors_free_16x16.png-93a6dd21fa87250b8f718c55d84de5e8.ctex"
+uid="uid://dpowt881pub12"
+path="res://.godot/imported/Alex_idle_anim_16x16.png-495bb2891d35d43bfd01ddd9f82e3850.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Interiors_free_16x16.png"
-dest_files=["res://.godot/imported/Interiors_free_16x16.png-93a6dd21fa87250b8f718c55d84de5e8.ctex"]
+source_file="res://assets/avatars/Alex_idle_anim_16x16.png"
+dest_files=["res://.godot/imported/Alex_idle_anim_16x16.png-495bb2891d35d43bfd01ddd9f82e3850.ctex"]
 
 [params]
 

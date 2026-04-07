@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dri7x8eykhyn3"
-path="res://.godot/imported/roomBuild.png-71ca06b9e80b30045f9908268e24c222.ctex"
+uid="uid://bqrxxym0acslj"
+path="res://.godot/imported/puzzle3.jpg-63a487ce94c86b3f6dc5d9ce1785968c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/roomBuild.png"
-dest_files=["res://.godot/imported/roomBuild.png-71ca06b9e80b30045f9908268e24c222.ctex"]
+source_file="res://assets/paintings/puzzle3.jpg"
+dest_files=["res://.godot/imported/puzzle3.jpg-63a487ce94c86b3f6dc5d9ce1785968c.ctex"]
 
 [params]
 

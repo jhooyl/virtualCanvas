@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dd74susdivwbs"
-path="res://.godot/imported/Amelia_run_16x16.png-1a513d8b0b5eab72fa8b87ba1cef0e0a.ctex"
+uid="uid://cs2w5bxjefbs6"
+path="res://.godot/imported/puzzle1.jpg-dd9305ee19d48d5d36f195c78eaac124.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Amelia_run_16x16.png"
-dest_files=["res://.godot/imported/Amelia_run_16x16.png-1a513d8b0b5eab72fa8b87ba1cef0e0a.ctex"]
+source_file="res://assets/paintings/puzzle1.jpg"
+dest_files=["res://.godot/imported/puzzle1.jpg-dd9305ee19d48d5d36f195c78eaac124.ctex"]
 
 [params]
 

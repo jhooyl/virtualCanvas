@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cq7uo185184fd"
-path="res://.godot/imported/Banc.png-1afd2b8e3198b6ba6906017a7bf1981e.ctex"
+uid="uid://wjq6c8vtl4f8"
+path="res://.godot/imported/puzzle2.jpg-8efb3ca4e060b155ec3160f0f60b36aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Banc.png"
-dest_files=["res://.godot/imported/Banc.png-1afd2b8e3198b6ba6906017a7bf1981e.ctex"]
+source_file="res://assets/paintings/puzzle2.jpg"
+dest_files=["res://.godot/imported/puzzle2.jpg-8efb3ca4e060b155ec3160f0f60b36aa.ctex"]
 
 [params]
 
