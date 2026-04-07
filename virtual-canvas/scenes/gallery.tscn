@@ -983,7 +983,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_543d2")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mdy1u"]
-size = Vector2(79, 111)
+size = Vector2(79.5, 102)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_543d2"]
 atlas = ExtResource("3_8naax")
@@ -1250,23 +1250,79 @@ region_enabled = true
 region_rect = Rect2(192, 720, 16, 32)
 
 [node name="yellow pillow" type="Sprite2D" parent="gallery/decorations" unique_id=627667096]
-position = Vector2(606, 517)
+position = Vector2(662, 552)
 scale = Vector2(1.3906258, 1.6562505)
 texture = ExtResource("2_mdy1u")
 region_enabled = true
 region_rect = Rect2(224, 1184, 32, 16)
 
+[node name="yellow pillow2" type="Sprite2D" parent="gallery/decorations" unique_id=819624608]
+position = Vector2(834, 552)
+scale = Vector2(1.3906258, 1.6562505)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(224, 1184, 32, 16)
+
+[node name="window" type="Sprite2D" parent="gallery/decorations" unique_id=1046116324]
+position = Vector2(443, 144)
+scale = Vector2(4, 3.1875002)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(32, 448, 32, 32)
+
+[node name="blue pillow" type="Sprite2D" parent="gallery/decorations" unique_id=1545008812]
+position = Vector2(835, 516)
+scale = Vector2(1.5419902, 1.5996175)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(192, 1184, 32, 16)
+
+[node name="blue pillow2" type="Sprite2D" parent="gallery/decorations" unique_id=2116614609]
+position = Vector2(607.00006, 520.00006)
+scale = Vector2(1.5419902, 1.5996175)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(192, 1184, 32, 16)
+
+[node name="blue pillow3" type="Sprite2D" parent="gallery/decorations" unique_id=610053190]
+position = Vector2(892, 549)
+scale = Vector2(1.5419902, 1.5996175)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(192, 1184, 32, 16)
+
+[node name="white pillow" type="Sprite2D" parent="gallery/decorations" unique_id=1205824119]
+position = Vector2(663, 515)
+scale = Vector2(1.5781257, 1.281252)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(224, 1200, 16, 32)
+
+[node name="white-black pillow" type="Sprite2D" parent="gallery/decorations" unique_id=1730701418]
+position = Vector2(890, 515.00006)
+scale = Vector2(1.4609352, 1.433595)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(176, 1200, 16, 32)
+
+[node name="white-black pillow2" type="Sprite2D" parent="gallery/decorations" unique_id=1782440566]
+position = Vector2(608.0001, 554.00006)
+scale = Vector2(1.4609352, 1.433595)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(176, 1200, 16, 32)
+
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=2074516992]
 script = ExtResource("2_8naax")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=651477836]
-position = Vector2(34.5, -13.5)
+position = Vector2(33.75, -19)
 shape = SubResource("RectangleShape2D_mdy1u")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=462778031]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1984803986]
-position = Vector2(33.25, -31.500002)
+position = Vector2(36, -38)
 scale = Vector2(4.34375, 4.09375)
 sprite_frames = SubResource("SpriteFrames_o7kiw")
 animation = &"walk_down"
