@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ccpkde81od3on"
-path="res://.godot/imported/wall.png-6b1d64fa3ea5498e75707962a9c3b56c.ctex"
+uid="uid://cs2w5bxjefbs6"
+path="res://.godot/imported/puzzle1.jpg-dd9305ee19d48d5d36f195c78eaac124.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/wall.png"
-dest_files=["res://.godot/imported/wall.png-6b1d64fa3ea5498e75707962a9c3b56c.ctex"]
+source_file="res://assets/paintings/puzzle1.jpg"
+dest_files=["res://.godot/imported/puzzle1.jpg-dd9305ee19d48d5d36f195c78eaac124.ctex"]
 
 [params]
 

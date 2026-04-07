@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bo2nhi4f66vgr"
-path="res://.godot/imported/sky.png-5f245714f6a8ddd8d2d452ade02334b8.ctex"
+uid="uid://htmfb841m478"
+path="res://.godot/imported/Amelia_16x16.png-fc8075d7cb48f453948baba4b85dbac3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sky.png"
-dest_files=["res://.godot/imported/sky.png-5f245714f6a8ddd8d2d452ade02334b8.ctex"]
+source_file="res://assets/avatars/Amelia_16x16.png"
+dest_files=["res://.godot/imported/Amelia_16x16.png-fc8075d7cb48f453948baba4b85dbac3.ctex"]
 
 [params]
 
