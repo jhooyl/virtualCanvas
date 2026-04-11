@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dd74susdivwbs" path="res://assets/avatars/Amelia_run_16x16.png" id="3_8naax"]
 [ext_resource type="AudioStream" uid="uid://bwxaqy3nd4dt8" path="res://assets/music/footstep_floor_05.wav" id="4_543d2"]
 [ext_resource type="Texture2D" uid="uid://dmbq0fuq1ywn1" path="res://assets/avatars/Adam_run_16x16.png" id="6_dsqju"]
+[ext_resource type="Script" uid="uid://ccerwyb014cxm" path="res://scenes/guide.gd" id="6_mkcid"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_543d2"]
 texture = ExtResource("1_lg6hf")
@@ -1368,6 +1369,17 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_dsqju"]
+radius = 101.98039
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mkcid"]
+content_margin_left = 15.0
+content_margin_top = 15.0
+content_margin_right = 15.0
+content_margin_bottom = 15.0
+bg_color = Color(0.9726233, 0.97743446, 0.681622, 1)
+border_color = Color(0.6, 0.6, 0.6, 1)
+
 [node name="game" type="Node2D" unique_id=1362398693]
 
 [node name="gallery" type="TileMapLayer" parent="." unique_id=964238555]
@@ -2018,13 +2030,13 @@ polygon = PackedVector2Array(-1, -7, -8, -1, -8, 2, 0, 9, 0, 10, 7, 3, 8, 3, -1,
 script = ExtResource("2_8naax")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Amelia" unique_id=651477836]
-position = Vector2(33.75, -19)
+position = Vector2(29, -251)
 shape = SubResource("RectangleShape2D_mdy1u")
 
 [node name="Camera2D" type="Camera2D" parent="Amelia" unique_id=462778031]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Amelia" unique_id=1984803986]
-position = Vector2(36, -38)
+position = Vector2(29, -266)
 scale = Vector2(4.34375, 4.09375)
 sprite_frames = SubResource("SpriteFrames_o7kiw")
 animation = &"walk_down"
@@ -2039,8 +2051,33 @@ wait_time = 0.45
 one_shot = true
 
 [node name="Guide" type="CharacterBody2D" parent="." unique_id=809760894]
+script = ExtResource("6_mkcid")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Guide" unique_id=559650571]
+position = Vector2(220.00006, -80.999985)
+scale = Vector2(3.875, 3.953125)
 sprite_frames = SubResource("SpriteFrames_2o1ue")
 animation = &"walk_down"
 autoplay = "walk_down"
+
+[node name="Zone detection" type="Area2D" parent="Guide" unique_id=97764514]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Guide/Zone detection" unique_id=711470020]
+position = Vector2(244, -54)
+shape = SubResource("CircleShape2D_dsqju")
+
+[node name="BulleDialogue" type="PanelContainer" parent="Guide" unique_id=811481126]
+visible = false
+offset_left = 196.0
+offset_top = -167.0
+offset_right = 236.0
+offset_bottom = -127.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_mkcid")
+
+[node name="Label" type="Label" parent="Guide/BulleDialogue" unique_id=6313317]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 16
+text = "Hello ! Welcome to the gallery."
+
+[connection signal="body_entered" from="Guide/Zone detection" to="Guide" method="_on_zone_detection_body_entered"]
