@@ -1312,6 +1312,196 @@ texture = ExtResource("2_mdy1u")
 region_enabled = true
 region_rect = Rect2(176, 1200, 16, 32)
 
+[node name="decorations2" type="Node2D" parent="gallery" unique_id=1962500869]
+position = Vector2(-28.552246, -250.84448)
+
+[node name="table" type="Sprite2D" parent="gallery/decorations2" unique_id=300791474]
+position = Vector2(-2.447754, 2.5944824)
+scale = Vector2(3.75, 2.375)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(32, 528, 16, 32)
+
+[node name="Sprite2D2" type="Sprite2D" parent="gallery/decorations2" unique_id=301491141]
+position = Vector2(-0.4477539, -19.405582)
+rotation = -3.1415927
+scale = Vector2(2.5331373, -2.188323)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(0, 784, 16, 32)
+
+[node name="sofa2" type="Sprite2D" parent="gallery/decorations2" unique_id=1294091795]
+position = Vector2(111.552246, -22.405518)
+scale = Vector2(2.2500002, 2.7812502)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(48, 1216, 64, 48)
+
+[node name="sofa" type="Sprite2D" parent="gallery/decorations2" unique_id=1862676120]
+position = Vector2(-118.447754, -22.405518)
+scale = Vector2(2.2500002, 2.7812502)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(48, 1216, 64, 48)
+
+[node name="planttt" type="Sprite2D" parent="gallery/decorations2" unique_id=316328944]
+position = Vector2(111.55231, 51.594482)
+scale = Vector2(-4.2470713, 3.4956517)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(192, 720, 16, 32)
+
+[node name="yellow pillow" type="Sprite2D" parent="gallery/decorations2" unique_id=1760008183]
+position = Vector2(-90.44769, -0.40545273)
+scale = Vector2(1.3906258, 1.6562505)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(224, 1184, 32, 16)
+
+[node name="yellow pillow2" type="Sprite2D" parent="gallery/decorations2" unique_id=2123827250]
+position = Vector2(81.55231, -0.40545273)
+scale = Vector2(1.3906258, 1.6562505)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(224, 1184, 32, 16)
+
+[node name="blue pillow" type="Sprite2D" parent="gallery/decorations2" unique_id=771229230]
+position = Vector2(82.55231, -36.405457)
+scale = Vector2(1.5419902, 1.5996175)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(192, 1184, 32, 16)
+
+[node name="blue pillow2" type="Sprite2D" parent="gallery/decorations2" unique_id=163667506]
+position = Vector2(-145.44763, -32.405396)
+scale = Vector2(1.5419902, 1.5996175)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(192, 1184, 32, 16)
+
+[node name="blue pillow3" type="Sprite2D" parent="gallery/decorations2" unique_id=1862474021]
+position = Vector2(139.5523, -3.4054546)
+scale = Vector2(1.5419902, 1.5996175)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(192, 1184, 32, 16)
+
+[node name="white pillow" type="Sprite2D" parent="gallery/decorations2" unique_id=501145340]
+position = Vector2(-89.447815, -37.405518)
+scale = Vector2(1.5781257, 1.281252)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(224, 1200, 16, 32)
+
+[node name="white-black pillow" type="Sprite2D" parent="gallery/decorations2" unique_id=1636813850]
+position = Vector2(137.5523, -37.405396)
+scale = Vector2(1.4609352, 1.433595)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(176, 1200, 16, 32)
+
+[node name="white-black pillow2" type="Sprite2D" parent="gallery/decorations2" unique_id=1530550840]
+position = Vector2(-144.44757, 1.5946064)
+scale = Vector2(1.4609352, 1.433595)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(176, 1200, 16, 32)
+
+[node name="decorations3" type="Node2D" parent="gallery" unique_id=223389932]
+position = Vector2(770.54395, -257.4497)
+
+[node name="table" type="Sprite2D" parent="gallery/decorations3" unique_id=1882421]
+position = Vector2(12.456055, 15.199707)
+scale = Vector2(3.75, 2.375)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(32, 528, 16, 32)
+
+[node name="Sprite2D2" type="Sprite2D" parent="gallery/decorations3" unique_id=1667657461]
+position = Vector2(14.456055, -6.800354)
+rotation = -3.1415927
+scale = Vector2(2.5331373, -2.188323)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(0, 784, 16, 32)
+
+[node name="sofa2" type="Sprite2D" parent="gallery/decorations3" unique_id=1279546158]
+position = Vector2(126.456055, -9.800293)
+scale = Vector2(2.2500002, 2.7812502)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(48, 1216, 64, 48)
+
+[node name="sofa" type="Sprite2D" parent="gallery/decorations3" unique_id=719844350]
+position = Vector2(-103.543945, -9.800293)
+scale = Vector2(2.2500002, 2.7812502)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(48, 1216, 64, 48)
+
+[node name="planttt" type="Sprite2D" parent="gallery/decorations3" unique_id=549999233]
+position = Vector2(126.456116, 64.19971)
+scale = Vector2(-4.2470713, 3.4956517)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(192, 720, 16, 32)
+
+[node name="yellow pillow" type="Sprite2D" parent="gallery/decorations3" unique_id=52009870]
+position = Vector2(-75.543884, 12.199768)
+scale = Vector2(1.3906258, 1.6562505)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(224, 1184, 32, 16)
+
+[node name="yellow pillow2" type="Sprite2D" parent="gallery/decorations3" unique_id=1739247012]
+position = Vector2(96.456116, 12.199768)
+scale = Vector2(1.3906258, 1.6562505)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(224, 1184, 32, 16)
+
+[node name="blue pillow" type="Sprite2D" parent="gallery/decorations3" unique_id=1541691896]
+position = Vector2(97.456116, -23.800232)
+scale = Vector2(1.5419902, 1.5996175)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(192, 1184, 32, 16)
+
+[node name="blue pillow2" type="Sprite2D" parent="gallery/decorations3" unique_id=1911242728]
+position = Vector2(-130.54382, -19.80017)
+scale = Vector2(1.5419902, 1.5996175)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(192, 1184, 32, 16)
+
+[node name="blue pillow3" type="Sprite2D" parent="gallery/decorations3" unique_id=147312179]
+position = Vector2(154.45612, 9.199768)
+scale = Vector2(1.5419902, 1.5996175)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(192, 1184, 32, 16)
+
+[node name="white pillow" type="Sprite2D" parent="gallery/decorations3" unique_id=1832909722]
+position = Vector2(-74.54401, -24.800293)
+scale = Vector2(1.5781257, 1.281252)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(224, 1200, 16, 32)
+
+[node name="white-black pillow" type="Sprite2D" parent="gallery/decorations3" unique_id=1695220279]
+position = Vector2(152.45612, -24.80017)
+scale = Vector2(1.4609352, 1.433595)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(176, 1200, 16, 32)
+
+[node name="white-black pillow2" type="Sprite2D" parent="gallery/decorations3" unique_id=1963282458]
+position = Vector2(-129.54376, 14.199829)
+scale = Vector2(1.4609352, 1.433595)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(176, 1200, 16, 32)
+
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=2074516992]
 script = ExtResource("2_8naax")
 
