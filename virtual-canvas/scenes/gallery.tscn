@@ -2,15 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://dri7x8eykhyn3" path="res://assets/decorations/roomBuild.png" id="1_lg6hf"]
 [ext_resource type="Script" uid="uid://cyhnndcxd5x1s" path="res://scripts/character_body_2d.gd" id="2_8naax"]
-<<<<<<< HEAD
-[ext_resource type="Texture2D" uid="uid://dag0mh5woq3ce" path="res://assets/Interiors_free_16x16.png" id="2_mdy1u"]
-[ext_resource type="Texture2D" uid="uid://dd74susdivwbs" path="res://assets/Amelia_run_16x16.png" id="3_8naax"]
-[ext_resource type="AudioStream" uid="uid://bwxaqy3nd4dt8" path="res://assets/footstep_floor_05.wav" id="4_543d2"]
-=======
 [ext_resource type="Texture2D" uid="uid://dag0mh5woq3ce" path="res://assets/decorations/Interiors_free_16x16.png" id="2_mdy1u"]
 [ext_resource type="Texture2D" uid="uid://dd74susdivwbs" path="res://assets/avatars/Amelia_run_16x16.png" id="3_8naax"]
 [ext_resource type="AudioStream" uid="uid://bwxaqy3nd4dt8" path="res://assets/music/footstep_floor_05.wav" id="4_543d2"]
->>>>>>> b7c4ca910b1b7f92ff51095e8ee1b2ef9a85caed
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_543d2"]
 texture = ExtResource("1_lg6hf")
@@ -1322,29 +1316,13 @@ region_rect = Rect2(176, 1200, 16, 32)
 script = ExtResource("2_8naax")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=651477836]
-<<<<<<< HEAD
-<<<<<<< HEAD
-position = Vector2(-368, 13)
-=======
 position = Vector2(33.75, -19)
->>>>>>> b7c4ca910b1b7f92ff51095e8ee1b2ef9a85caed
-=======
-position = Vector2(37, -13)
->>>>>>> parent of 67e27aa (dialogue)
 shape = SubResource("RectangleShape2D_mdy1u")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=462778031]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1984803986]
-<<<<<<< HEAD
-<<<<<<< HEAD
-position = Vector2(-369, 4.999998)
-=======
 position = Vector2(36, -38)
->>>>>>> b7c4ca910b1b7f92ff51095e8ee1b2ef9a85caed
-=======
-position = Vector2(33.25, -31.500002)
->>>>>>> parent of 67e27aa (dialogue)
 scale = Vector2(4.34375, 4.09375)
 sprite_frames = SubResource("SpriteFrames_o7kiw")
 animation = &"walk_down"

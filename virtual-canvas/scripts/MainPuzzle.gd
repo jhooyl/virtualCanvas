@@ -13,23 +13,12 @@ func _ready():
 	_generate_puzzle()
 
 func _generate_puzzle():
-<<<<<<< HEAD
-<<<<<<< HEAD
-	var piece_w = IMAGE.get_width() / COLS
-	var piece_h = IMAGE.get_height() / ROWS
-=======
 	var IMAGE = load(PuzzleData.get_current_image())
 	
-=======
->>>>>>> parent of 67e27aa (dialogue)
 	var piece_w = IMAGE.get_width()  / COLS   # 564/3 = 188
 	var piece_h = IMAGE.get_height() / ROWS   # 450/3 = 150
 
 	var viewport_size = Vector2(1152, 648)    # ← taille fixe de ta fenêtre
-<<<<<<< HEAD
->>>>>>> b7c4ca910b1b7f92ff51095e8ee1b2ef9a85caed
-=======
->>>>>>> parent of 67e27aa (dialogue)
 
 	var grid_origin = Vector2(
 		(viewport_size.x - IMAGE.get_width())  / 2.0,   # (1152-564)/2 = 294
