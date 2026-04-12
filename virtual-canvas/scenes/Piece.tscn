@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bntyh4585f06w"]
 
 [ext_resource type="Script" uid="uid://cux2bk16uakot" path="res://scripts/Piece.gd" id="1_gksgf"]
+[ext_resource type="AudioStream" uid="uid://d0lhrhhstv0g7" path="res://assets/music/button-9(chosic.com).mp3" id="2_tk1p6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tk1p6"]
 
@@ -11,3 +12,6 @@ script = ExtResource("1_gksgf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1543691396]
 shape = SubResource("RectangleShape2D_tk1p6")
+
+[node name="MoveSound" type="AudioStreamPlayer2D" parent="." unique_id=1004269578]
+stream = ExtResource("2_tk1p6")

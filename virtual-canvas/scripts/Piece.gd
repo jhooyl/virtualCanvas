@@ -5,6 +5,17 @@ var is_placed := false
 var dragging := false
 var drag_offset := Vector2.ZERO
 
+# Dans ton script Piece.gd
+@onready var move_sound = $MoveSound
+
+func _on_drag_start():
+	move_sound.pitch_scale = randf_range(0.9, 1.1) # Optionnel : varie un peu le ton pour plus de réalisme
+	move_sound.play()
+
+func _on_drag_end():
+	# Tu peux aussi mettre un son différent pour le "lâcher"
+	move_sound.play()
+	
 func _ready():
 	input_pickable = true
 	connect("input_event", _on_input_event)

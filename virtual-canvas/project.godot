@@ -18,6 +18,7 @@ config/icon="res://assets/other/icon.svg"
 [autoload]
 
 PuzzleData="*uid://bsdo3jk0hoa0a"
+MusicPlayer="*uid://cod3tmhd2k5ad"
 
 [input]
 
