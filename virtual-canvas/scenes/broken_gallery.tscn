@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://cyhnndcxd5x1s" path="res://scripts/character_body_2d.gd" id="2_j5utg"]
 [ext_resource type="Texture2D" uid="uid://dd74susdivwbs" path="res://assets/avatars/Amelia_run_16x16.png" id="3_8kq2p"]
 [ext_resource type="AudioStream" uid="uid://bwxaqy3nd4dt8" path="res://assets/music/footstep_floor_05.wav" id="4_hh1vw"]
+[ext_resource type="Script" uid="uid://71o1g45gemtx" path="res://scripts/MusicChanger.gd" id="5_8kq2p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k7wtj"]
 texture = ExtResource("1_mbts6")
@@ -1205,3 +1206,7 @@ volume_db = -27.0
 [node name="StepTimer" type="Timer" parent="CharacterBody2D" unique_id=1987212796]
 wait_time = 0.45
 one_shot = true
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1949019081]
+script = ExtResource("5_8kq2p")
+music_to_play = "uid://c6c2txgu6gvev"

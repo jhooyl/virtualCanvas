@@ -7,6 +7,7 @@
 [ext_resource type="AudioStream" uid="uid://bwxaqy3nd4dt8" path="res://assets/music/footstep_floor_05.wav" id="4_543d2"]
 [ext_resource type="Texture2D" uid="uid://dmbq0fuq1ywn1" path="res://assets/avatars/Adam_run_16x16.png" id="6_dsqju"]
 [ext_resource type="Script" uid="uid://ccerwyb014cxm" path="res://scenes/guide.gd" id="6_mkcid"]
+[ext_resource type="Script" uid="uid://71o1g45gemtx" path="res://scripts/MusicChanger.gd" id="8_r0fv4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_543d2"]
 texture = ExtResource("1_lg6hf")
@@ -2079,5 +2080,9 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 16
 text = "Hello ! Welcome to the gallery."
+
+[node name="Node2D" type="Node2D" parent="." unique_id=360123821]
+script = ExtResource("8_r0fv4")
+music_to_play = "uid://df07ld2rbgf43"
 
 [connection signal="body_entered" from="Guide/Zone detection" to="Guide" method="_on_zone_detection_body_entered"]
