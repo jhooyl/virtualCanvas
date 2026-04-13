@@ -986,7 +986,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_543d2")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mdy1u"]
-size = Vector2(79.5, 102)
+size = Vector2(72, 94)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_543d2"]
 atlas = ExtResource("3_8naax")
@@ -1380,6 +1380,9 @@ content_margin_right = 15.0
 content_margin_bottom = 15.0
 bg_color = Color(0.9726233, 0.97743446, 0.681622, 1)
 border_color = Color(0.6, 0.6, 0.6, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r0fv4"]
+size = Vector2(64, 92)
 
 [node name="game" type="Node2D" unique_id=1362398693]
 
@@ -2080,7 +2083,7 @@ polygon = PackedVector2Array(-1, -7, -8, -1, -8, 2, 0, 9, 0, 10, 7, 3, 8, 3, -1,
 script = ExtResource("2_8naax")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Amelia" unique_id=651477836]
-position = Vector2(29, -251)
+position = Vector2(29, -248)
 shape = SubResource("RectangleShape2D_mdy1u")
 
 [node name="Camera2D" type="Camera2D" parent="Amelia" unique_id=462778031]
@@ -2130,7 +2133,11 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 16
 text = "Hello ! Welcome to the gallery."
 
-[node name="Node2D" type="Node2D" parent="." unique_id=360123821]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Guide" unique_id=964728775]
+position = Vector2(219, -68)
+shape = SubResource("RectangleShape2D_r0fv4")
+
+[node name="music" type="Node2D" parent="." unique_id=360123821]
 script = ExtResource("8_r0fv4")
 music_to_play = "uid://df07ld2rbgf43"
 

@@ -1381,6 +1381,9 @@ content_margin_bottom = 15.0
 bg_color = Color(0.9726233, 0.97743446, 0.681622, 1)
 border_color = Color(0.6, 0.6, 0.6, 1)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_l30nw"]
+radius = 101.98039
+
 [node name="glitchGame" type="Node2D" unique_id=712533075]
 
 [node name="gallery" type="TileMapLayer" parent="." unique_id=201534952]
@@ -2134,5 +2137,9 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 16
 text = "Hello ! Welcome to the gallery."
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Guide" unique_id=492857526]
+position = Vector2(244, -54)
+shape = SubResource("CircleShape2D_l30nw")
 
 [connection signal="body_entered" from="Guide/Zone detection" to="Guide" method="_on_zone_detection_body_entered"]
