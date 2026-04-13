@@ -1,98 +1,23 @@
 [gd_scene format=3 uid="uid://d3k83yhtskekp"]
 
 [ext_resource type="Script" uid="uid://dm0fjdi8pdwxm" path="res://scripts/WinScreen.gd" id="1_ulig0"]
-[ext_resource type="Texture2D" uid="uid://dpowt881pub12" path="res://assets/avatars/Alex_idle_anim_16x16.png" id="2_okh34"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_q8i45"]
-atlas = ExtResource("2_okh34")
-region = Rect2(288, 0, 16, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jrum5"]
-atlas = ExtResource("2_okh34")
-region = Rect2(304, 0, 16, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_f4f3g"]
-atlas = ExtResource("2_okh34")
-region = Rect2(320, 0, 16, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_274dy"]
-atlas = ExtResource("2_okh34")
-region = Rect2(336, 0, 16, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_tad7g"]
-atlas = ExtResource("2_okh34")
-region = Rect2(352, 0, 16, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8cwvy"]
-atlas = ExtResource("2_okh34")
-region = Rect2(368, 0, 16, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_fpwgu"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_q8i45")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jrum5")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_f4f3g")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_274dy")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tad7g")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8cwvy")
-}],
-"loop": true,
-"name": &"idle",
-"speed": 5.0
-}]
 
 [node name="WinScreen" type="CanvasLayer" unique_id=159909372]
 script = ExtResource("1_ulig0")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1649486119]
+[node name="Label" type="Label" parent="." unique_id=1110134720]
 anchors_preset = -1
-anchor_left = 0.002
-anchor_top = 0.002
-anchor_right = 0.002
-anchor_bottom = 0.002
-offset_left = -2.3040001
-offset_top = -1.296
-offset_right = 1148.696
-offset_bottom = 649.704
-color = Color(0.2585664, 0.2585664, 0.25856638, 1)
-
-[node name="CharacterSprite" type="AnimatedSprite2D" parent="." unique_id=418125909]
-position = Vector2(128.99998, 407)
-scale = Vector2(11.75, 11.75)
-sprite_frames = SubResource("SpriteFrames_fpwgu")
-animation = &"idle"
-frame_progress = 0.5922821
-
-[node name="DialogueBox" type="Panel" parent="." unique_id=1361031484]
-offset_left = 202.0
-offset_top = 183.0
-offset_right = 1096.0
-offset_bottom = 413.0
-
-[node name="DialogueLabel" type="Label" parent="DialogueBox" unique_id=662012692]
-layout_mode = 0
-offset_left = 33.0
-offset_top = 28.0
-offset_right = 859.0
-offset_bottom = 125.0
-
-[node name="ContinueLabel" type="Label" parent="DialogueBox" unique_id=1390524219]
-layout_mode = 0
-offset_left = 435.0
-offset_top = 145.0
-offset_right = 870.0
-offset_bottom = 214.0
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1796019174]
+anchor_left = 0.49100003
+anchor_top = 0.27400002
+anchor_right = 0.49100003
+anchor_bottom = 0.27400002
+offset_left = -147.63202
+offset_top = -40.552017
+offset_right = 148.36798
+offset_bottom = 40.447983
+grow_horizontal = 2
+size_flags_horizontal = 0
+size_flags_vertical = 1
+text = "Félicitaions!!!!"
+horizontal_alignment = 1
+vertical_alignment = 1
