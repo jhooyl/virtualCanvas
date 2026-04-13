@@ -1179,6 +1179,17 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="Gradient" id="Gradient_l30nw"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_l30nw"]
+gradient = SubResource("Gradient_l30nw")
+width = 200
+height = 200
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 0.5)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_o7kiw"]
 atlas = ExtResource("8_t0pae")
 region = Rect2(288, 0, 16, 32)
@@ -2103,6 +2114,11 @@ volume_db = -27.0
 wait_time = 0.45
 one_shot = true
 
+[node name="PointLight2D" type="PointLight2D" parent="Amelia" unique_id=1168250335]
+position = Vector2(37.000008, -2.500002)
+scale = Vector2(2.8437502, 2.734375)
+texture = SubResource("GradientTexture2D_l30nw")
+
 [node name="music" type="Node2D" parent="." unique_id=1949019081]
 script = ExtResource("5_8kq2p")
 music_to_play = "uid://c6c2txgu6gvev"
@@ -2141,5 +2157,8 @@ text = "Hello ! Welcome to the gallery."
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Guide" unique_id=492857526]
 position = Vector2(244, -54)
 shape = SubResource("CircleShape2D_l30nw")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=399840038]
+color = Color(0.01097722, 0.045271404, 0.17090899, 1)
 
 [connection signal="body_entered" from="Guide/Zone detection" to="Guide" method="_on_zone_detection_body_entered"]
