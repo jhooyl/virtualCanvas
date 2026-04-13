@@ -1432,6 +1432,20 @@ position = Vector2(-241, -239)
 scale = Vector2(2.1875007, 2.6093752)
 polygon = PackedVector2Array(-10, -15, -12, -13, -13, -13, -11, -9, -10, -9, -13, -6, -13, -1, -11, 1, -9, 1, -6, -3, -5, -3, -8, 15, -8, 16, 8, 16, 7, 2, 7, -4, 11, -1, 11, 0, 13, -2, 14, -2, 14, -8, 9, -15, 9, -16, -10, -16)
 
+[node name="plantt-collision2" type="StaticBody2D" parent="gallery/decorations" unique_id=1792558133]
+
+[node name="plantt" type="Sprite2D" parent="gallery/decorations/plantt-collision2" unique_id=113187975]
+position = Vector2(2286, -872)
+scale = Vector2(2.1875007, 2.6093752)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(208, 704, 32, 32)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="gallery/decorations/plantt-collision2" unique_id=1995899801]
+position = Vector2(2287, -874.99994)
+scale = Vector2(2.1875007, 2.6093752)
+polygon = PackedVector2Array(-10, -15, -12, -13, -13, -13, -11, -9, -10, -9, -13, -6, -13, -1, -11, 1, -9, 1, -6, -3, -5, -3, -8, 15, -8, 16, 8, 16, 7, 2, 7, -4, 11, -1, 11, 0, 13, -2, 14, -2, 14, -8, 9, -15, 9, -16, -10, -16)
+
 [node name="plantInTable_collision" type="StaticBody2D" parent="gallery/decorations" unique_id=1546093834]
 
 [node name="plantInTable" type="Sprite2D" parent="gallery/decorations/plantInTable_collision" unique_id=1643103258]
@@ -1486,7 +1500,21 @@ region_enabled = true
 region_rect = Rect2(160, 704, 32, 48)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="gallery/decorations/plant2c" unique_id=549850733]
-position = Vector2(277, 203.99994)
+position = Vector2(278, 211)
+scale = Vector2(2.5703135, 2.8373256)
+polygon = PackedVector2Array(-4, -16, -9, -13, -10, -13, -10, -6, -11, -6, -6, 3, -5, 3, -7, 10, -8, 10, -6, 17, -6, 18, 7, 16, 8, 16, 5, 4, 5, 3, 10, -4, 11, -4, 9, -12, 9, -14, 6, -16, 6, -17, -4, -17)
+
+[node name="plant2c2" type="StaticBody2D" parent="gallery/decorations" unique_id=568155993]
+
+[node name="plant2" type="Sprite2D" parent="gallery/decorations/plant2c2" unique_id=1701722341]
+position = Vector2(3087, -884.00006)
+scale = Vector2(2.5703135, 2.8373256)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(160, 704, 32, 48)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="gallery/decorations/plant2c2" unique_id=588040539]
+position = Vector2(3087, -887.00006)
 scale = Vector2(2.5703135, 2.8373256)
 polygon = PackedVector2Array(-4, -16, -9, -13, -10, -13, -10, -6, -11, -6, -6, 3, -5, 3, -7, 10, -8, 10, -6, 17, -6, 18, 7, 16, 8, 16, 5, 4, 5, 3, 10, -4, 11, -4, 9, -12, 9, -14, 6, -16, 6, -17, -4, -17)
 
@@ -1559,6 +1587,20 @@ region_rect = Rect2(32, 448, 32, 32)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="gallery/decorations/windowc" unique_id=2102084731]
 position = Vector2(443, 144)
+scale = Vector2(4, 3.1875002)
+polygon = PackedVector2Array(-16, 16, 16, 16, 16, -11, -16, -11)
+
+[node name="windowc2" type="StaticBody2D" parent="gallery/decorations" unique_id=90473902]
+
+[node name="window" type="Sprite2D" parent="gallery/decorations/windowc2" unique_id=1859724219]
+position = Vector2(2324, 151.00002)
+scale = Vector2(4, 3.1875002)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(32, 448, 32, 32)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="gallery/decorations/windowc2" unique_id=42719060]
+position = Vector2(2323, 155)
 scale = Vector2(4, 3.1875002)
 polygon = PackedVector2Array(-16, 16, 16, 16, 16, -11, -16, -11)
 
@@ -1645,6 +1687,13 @@ region_rect = Rect2(176, 1200, 16, 32)
 position = Vector2(608.0001, 554.00006)
 scale = Vector2(1.4609352, 1.433595)
 polygon = PackedVector2Array(-1, -7, -8, -1, -8, 2, 0, 9, 0, 10, 7, 3, 8, 3, -1, -8)
+
+[node name="door" type="Sprite2D" parent="gallery/decorations" unique_id=491805373]
+position = Vector2(2693.875, -960.5)
+scale = Vector2(6.445313, 6.21875)
+texture = ExtResource("2_mdy1u")
+region_enabled = true
+region_rect = Rect2(176, 384, 32, 32)
 
 [node name="deco2" type="Node2D" parent="gallery" unique_id=2072942222]
 position = Vector2(149.39697, -261.85217)
