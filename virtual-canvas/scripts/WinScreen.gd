@@ -14,7 +14,7 @@ const DIALOGUES = [
 	[
 		"Incredible! You've done it — all three paintings restored!",
 		"The gallery shines once more, thanks to you.",
-		"You are a true guardian of art. Well done!"
+		"I am waiting for you in the exits door!!"
 	]
 ]
 

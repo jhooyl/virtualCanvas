@@ -4,13 +4,16 @@
 [ext_resource type="Texture2D" uid="uid://dag0mh5woq3ce" path="res://assets/decorations/Interiors_free_16x16.png" id="2_hh1vw"]
 [ext_resource type="Script" uid="uid://cyhnndcxd5x1s" path="res://scripts/character_body_2d.gd" id="2_j5utg"]
 [ext_resource type="Texture2D" uid="uid://dd74susdivwbs" path="res://assets/avatars/Amelia_run_16x16.png" id="3_8kq2p"]
+[ext_resource type="Shader" uid="uid://dp1naheixnrq7" path="res://scenes/paint.gdshader" id="3_8m6ra"]
 [ext_resource type="Texture2D" uid="uid://cs2w5bxjefbs6" path="res://assets/paintings/puzzle1.jpg" id="3_tjr5i"]
 [ext_resource type="Texture2D" uid="uid://wjq6c8vtl4f8" path="res://assets/paintings/puzzle2.jpg" id="4_8m6ra"]
 [ext_resource type="AudioStream" uid="uid://bwxaqy3nd4dt8" path="res://assets/music/footstep_floor_05.wav" id="4_hh1vw"]
+[ext_resource type="Script" uid="uid://b6sngayowag3p" path="res://scripts/paintingsBroken.gd" id="5_0n8sb"]
 [ext_resource type="Texture2D" uid="uid://bqrxxym0acslj" path="res://assets/paintings/puzzle3.jpg" id="5_5iysd"]
 [ext_resource type="Script" uid="uid://71o1g45gemtx" path="res://scripts/MusicChanger.gd" id="5_8kq2p"]
 [ext_resource type="Script" uid="uid://ccerwyb014cxm" path="res://scenes/guide.gd" id="7_l30nw"]
 [ext_resource type="Texture2D" uid="uid://dmbq0fuq1ywn1" path="res://assets/avatars/Adam_run_16x16.png" id="8_t0pae"]
+[ext_resource type="FontFile" uid="uid://dkxl7nnt1buob" path="res://fonts/PressStart2P-Regular.ttf" id="14_0n8sb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k7wtj"]
 texture = ExtResource("1_mbts6")
@@ -987,6 +990,18 @@ texture = ExtResource("1_mbts6")
 [sub_resource type="TileSet" id="TileSet_l30nw"]
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_k7wtj")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5iysd"]
+shader = ExtResource("3_8m6ra")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b21jj"]
+size = Vector2(551.94293, 705.4839)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_egk3d"]
+shader = ExtResource("3_8m6ra")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rwmee"]
+shader = ExtResource("3_8m6ra")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t0pae"]
 size = Vector2(116, 137)
@@ -2103,19 +2118,43 @@ polygon = PackedVector2Array(-1, -7, -8, -1, -8, 2, 0, 9, 0, 10, 7, 3, 8, 3, -1,
 [node name="paintings" type="Node" parent="gallery" unique_id=168963174]
 
 [node name="painting1" type="Sprite2D" parent="gallery/paintings" unique_id=624877750]
+material = SubResource("ShaderMaterial_5iysd")
 position = Vector2(831.99994, 180.99998)
 scale = Vector2(0.37322682, 0.34444445)
 texture = ExtResource("3_tjr5i")
 
+[node name="Area2D" type="Area2D" parent="gallery/paintings/painting1" unique_id=857860412]
+script = ExtResource("5_0n8sb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="gallery/paintings/painting1/Area2D" unique_id=812666648]
+position = Vector2(0.00024414063, 132.09668)
+shape = SubResource("RectangleShape2D_b21jj")
+
 [node name="painting2" type="Sprite2D" parent="gallery/paintings" unique_id=2024597239]
+material = SubResource("ShaderMaterial_egk3d")
 position = Vector2(1386.0001, 186)
 scale = Vector2(0.29605246, 0.29479173)
 texture = ExtResource("4_8m6ra")
 
+[node name="Area2D" type="Area2D" parent="gallery/paintings/painting2" unique_id=1530735838]
+script = ExtResource("5_0n8sb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="gallery/paintings/painting2/Area2D" unique_id=516264948]
+position = Vector2(0.00024414063, 5.8063965)
+shape = SubResource("RectangleShape2D_b21jj")
+
 [node name="painting3" type="Sprite2D" parent="gallery/paintings" unique_id=416052870]
+material = SubResource("ShaderMaterial_rwmee")
 position = Vector2(1951.0001, 180)
 scale = Vector2(0.27904022, 0.31145835)
 texture = ExtResource("5_5iysd")
+
+[node name="Area2D" type="Area2D" parent="gallery/paintings/painting3" unique_id=679870802]
+script = ExtResource("5_0n8sb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="gallery/paintings/painting3/Area2D" unique_id=1320773557]
+position = Vector2(0.00024414063, 5.8063965)
+shape = SubResource("RectangleShape2D_b21jj")
 
 [node name="Amelia" type="CharacterBody2D" parent="." unique_id=2117196833]
 script = ExtResource("2_j5utg")
@@ -2189,4 +2228,16 @@ shape = SubResource("CircleShape2D_l30nw")
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=399840038]
 color = Color(0.01097722, 0.045271404, 0.17090899, 1)
 
+[node name="Label" type="Label" parent="." unique_id=1675276843]
+offset_left = 973.0
+offset_top = 160.0
+offset_right = 1445.0
+offset_bottom = 200.0
+theme_override_fonts/font = ExtResource("14_0n8sb")
+theme_override_font_sizes/font_size = 10
+metadata/_edit_use_anchors_ = true
+
+[connection signal="body_entered" from="gallery/paintings/painting1/Area2D" to="gallery/paintings/painting1/Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="gallery/paintings/painting2/Area2D" to="gallery/paintings/painting2/Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="gallery/paintings/painting3/Area2D" to="gallery/paintings/painting3/Area2D" method="_on_body_entered"]
 [connection signal="body_entered" from="Guide/Zone detection" to="Guide" method="_on_zone_detection_body_entered"]
