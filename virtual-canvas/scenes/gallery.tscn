@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bqrxxym0acslj" path="res://assets/paintings/puzzle3.jpg" id="5_vtsty"]
 [ext_resource type="Texture2D" uid="uid://dmbq0fuq1ywn1" path="res://assets/avatars/Adam_run_16x16.png" id="6_dsqju"]
 [ext_resource type="Script" uid="uid://ccerwyb014cxm" path="res://scenes/guide.gd" id="6_mkcid"]
+[ext_resource type="Script" uid="uid://71d0iwusgkqq" path="res://scenes/camera_shake.gd" id="7_fgpkw"]
 [ext_resource type="Script" uid="uid://71o1g45gemtx" path="res://scripts/MusicChanger.gd" id="8_r0fv4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_543d2"]
@@ -1972,6 +1973,9 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_543d2")
 sources/1 = SubResource("TileSetAtlasSource_li7wd")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mtg1g"]
+size = Vector2(621.6057, 810.0001)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mdy1u"]
 size = Vector2(72, 94)
 
@@ -3080,6 +3084,14 @@ position = Vector2(831.99994, 180.99998)
 scale = Vector2(0.37322682, 0.34444445)
 texture = ExtResource("2_mtg1g")
 
+[node name="Area2D" type="Area2D" parent="gallery/paintings/painting1" unique_id=499011154]
+z_index = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="gallery/paintings/painting1/Area2D" unique_id=813004828]
+z_index = 1
+position = Vector2(8.038086, 207.58057)
+shape = SubResource("RectangleShape2D_mtg1g")
+
 [node name="painting2" type="Sprite2D" parent="gallery/paintings" unique_id=596837116]
 position = Vector2(1386.0001, 186)
 scale = Vector2(0.29605246, 0.29479173)
@@ -3091,7 +3103,6 @@ scale = Vector2(0.27904022, 0.31145835)
 texture = ExtResource("5_vtsty")
 
 [node name="Amelia" type="CharacterBody2D" parent="." unique_id=2074516992]
-z_index = 1
 script = ExtResource("2_8naax")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Amelia" unique_id=651477836]
@@ -3100,6 +3111,7 @@ shape = SubResource("RectangleShape2D_mdy1u")
 
 [node name="Camera2D" type="Camera2D" parent="Amelia" unique_id=462778031]
 zoom = Vector2(0.65, 0.65)
+script = ExtResource("7_fgpkw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Amelia" unique_id=1984803986]
 position = Vector2(29, -266)
@@ -3115,6 +3127,33 @@ volume_db = -27.0
 [node name="StepTimer" type="Timer" parent="Amelia" unique_id=2138980572]
 wait_time = 0.45
 one_shot = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Amelia" unique_id=781666723]
+
+[node name="EcranNoir" type="ColorRect" parent="Amelia/CanvasLayer" unique_id=589398212]
+visible = false
+offset_left = -3277.0
+offset_top = -1661.0
+offset_right = 6425.0
+offset_bottom = 1952.0
+color = Color(0, 0, 0, 1)
+
+[node name="TexteTransition" type="Label" parent="Amelia/CanvasLayer" unique_id=1788912300]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -159.5
+offset_top = -86.0
+offset_right = 159.5
+offset_bottom = 86.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Guide" type="CharacterBody2D" parent="." unique_id=809760894]
 z_index = 1
@@ -3155,4 +3194,5 @@ shape = SubResource("RectangleShape2D_r0fv4")
 script = ExtResource("8_r0fv4")
 music_to_play = "uid://df07ld2rbgf43"
 
+[connection signal="body_entered" from="gallery/paintings/painting1/Area2D" to="Amelia" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Guide/Zone detection" to="Guide" method="_on_zone_detection_body_entered"]
