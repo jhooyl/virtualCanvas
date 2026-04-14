@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bo2nhi4f66vgr"
-path="res://.godot/imported/sky.png-ae54b4cec0c5c470070f77fa74bd1ce2.ctex"
+uid="uid://dmbq0fuq1ywn1"
+path="res://.godot/imported/Adam_run_16x16.png-2876d9b8a0a0959d8dc919b403854950.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/other/sky.png"
-dest_files=["res://.godot/imported/sky.png-ae54b4cec0c5c470070f77fa74bd1ce2.ctex"]
+source_file="res://assets/avatars/Adam_run_16x16.png"
+dest_files=["res://.godot/imported/Adam_run_16x16.png-2876d9b8a0a0959d8dc919b403854950.ctex"]
 
 [params]
 

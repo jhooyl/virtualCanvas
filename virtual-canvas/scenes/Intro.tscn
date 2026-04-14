@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://2ti1mw6nfldh"]
+
+[ext_resource type="FontFile" uid="uid://dkxl7nnt1buob" path="res://fonts/PressStart2P-Regular.ttf" id="1_45dpb"]
+[ext_resource type="Script" uid="uid://vtxn7yh86kb0" path="res://scripts/Intro.gd" id="1_aqbct"]
+[ext_resource type="AudioStream" uid="uid://ww64ei5je11l" path="res://assets/music/Intro.mp3" id="3_aqbct"]
+
+[node name="Intro" type="Node2D" unique_id=278324005]
+script = ExtResource("1_aqbct")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=934581519]
+offset_right = 1148.0
+offset_bottom = 647.0
+color = Color(0.096204735, 0.09620475, 0.096204735, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1682275242]
+offset_left = 98.0
+offset_top = 197.0
+offset_right = 1065.0
+offset_bottom = 348.0
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_45dpb")
+theme_override_font_sizes/font_size = 15
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer2D" parent="." unique_id=374122562]
+stream = ExtResource("3_aqbct")
