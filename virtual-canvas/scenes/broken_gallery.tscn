@@ -995,7 +995,23 @@ sources/0 = SubResource("TileSetAtlasSource_k7wtj")
 shader = ExtResource("3_8m6ra")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b21jj"]
-size = Vector2(551.94293, 705.4839)
+size = Vector2(551.94293, 583.54846)
+
+[sub_resource type="Gradient" id="Gradient_0n8sb"]
+offsets = PackedFloat32Array(0.26923078, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0.15838629, 0.16001311, 0.14479837, 0)
+metadata/_snap_enabled = true
+metadata/_snap_count = 52
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_b21jj"]
+gradient = SubResource("Gradient_0n8sb")
+width = 200
+height = 200
+fill = 1
+fill_from = Vector2(0.5131579, 0.5)
+fill_to = Vector2(1, 1)
+metadata/_snap_count = 76
+metadata/_snap_enabled = true
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_egk3d"]
 shader = ExtResource("3_8m6ra")
@@ -2127,8 +2143,13 @@ texture = ExtResource("3_tjr5i")
 script = ExtResource("5_0n8sb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="gallery/paintings/painting1/Area2D" unique_id=812666648]
-position = Vector2(0.00024414063, 132.09668)
+position = Vector2(0.00024414063, 71.12897)
 shape = SubResource("RectangleShape2D_b21jj")
+
+[node name="PointLight2D" type="PointLight2D" parent="gallery/paintings/painting1" unique_id=1666964332]
+position = Vector2(-24.113922, 84.19359)
+scale = Vector2(3.315678, -3.316935)
+texture = SubResource("GradientTexture2D_b21jj")
 
 [node name="painting2" type="Sprite2D" parent="gallery/paintings" unique_id=2024597239]
 material = SubResource("ShaderMaterial_egk3d")
@@ -2138,10 +2159,16 @@ texture = ExtResource("4_8m6ra")
 
 [node name="Area2D" type="Area2D" parent="gallery/paintings/painting2" unique_id=1530735838]
 script = ExtResource("5_0n8sb")
+painting_index = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="gallery/paintings/painting2/Area2D" unique_id=516264948]
-position = Vector2(0.00024414063, 5.8063965)
+position = Vector2(6.754979, 54.275585)
 shape = SubResource("RectangleShape2D_b21jj")
+
+[node name="PointLight2D" type="PointLight2D" parent="gallery/paintings/painting2" unique_id=81891620]
+position = Vector2(13.5108795, 47.491188)
+scale = Vector2(3.315678, -3.316935)
+texture = SubResource("GradientTexture2D_b21jj")
 
 [node name="painting3" type="Sprite2D" parent="gallery/paintings" unique_id=416052870]
 material = SubResource("ShaderMaterial_rwmee")
@@ -2151,10 +2178,16 @@ texture = ExtResource("5_5iysd")
 
 [node name="Area2D" type="Area2D" parent="gallery/paintings/painting3" unique_id=679870802]
 script = ExtResource("5_0n8sb")
+painting_index = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="gallery/paintings/painting3/Area2D" unique_id=1320773557]
-position = Vector2(0.00024414063, 5.8063965)
+position = Vector2(14.334221, 89.89964)
 shape = SubResource("RectangleShape2D_b21jj")
+
+[node name="PointLight2D" type="PointLight2D" parent="gallery/paintings/painting3" unique_id=974193712]
+position = Vector2(-3.5841312, 93.11037)
+scale = Vector2(3.315678, -3.316935)
+texture = SubResource("GradientTexture2D_b21jj")
 
 [node name="Amelia" type="CharacterBody2D" parent="." unique_id=2117196833]
 script = ExtResource("2_j5utg")
@@ -2230,11 +2263,11 @@ color = Color(0.01097722, 0.045271404, 0.17090899, 1)
 
 [node name="Label" type="Label" parent="." unique_id=1675276843]
 offset_left = 973.0
-offset_top = 160.0
-offset_right = 1445.0
-offset_bottom = 200.0
+offset_top = 118.0
+offset_right = 1175.0
+offset_bottom = 239.0
 theme_override_fonts/font = ExtResource("14_0n8sb")
-theme_override_font_sizes/font_size = 10
+theme_override_font_sizes/font_size = 15
 metadata/_edit_use_anchors_ = true
 
 [connection signal="body_entered" from="gallery/paintings/painting1/Area2D" to="gallery/paintings/painting1/Area2D" method="_on_body_entered"]

@@ -14,7 +14,7 @@ const DIALOGUES = [
 	[
 		"Incredible! You've done it — all three paintings restored!",
 		"The gallery shines once more, thanks to you.",
-		"I am waiting for you in the exits door!!"
+		"I am waiting for you in the exit door!!"
 	]
 ]
 
@@ -26,9 +26,10 @@ const DIALOGUES = [
 var current_dialogue_index := 0
 var dialogue_lines: Array = []
 var is_animating := false
+var started := false
 
 func _ready():
-	var puzzle_index = clamp(PuzzleData.current_index - 1, 0, DIALOGUES.size() - 1)
+	var puzzle_index = clamp(PuzzleData.current_index, 0, DIALOGUES.size() - 1)
 	dialogue_lines = DIALOGUES[puzzle_index]
 
 	dialogue_box.modulate.a = 0
@@ -48,13 +49,18 @@ func _ready():
 	var tween = create_tween().set_trans(Tween.TRANS_SINE)
 	tween.tween_property(character_sprite, "modulate:a", 1.0, 0.6)
 	tween.tween_property(dialogue_box, "modulate:a", 1.0, 0.4)
-	tween.tween_callback(_show_next_line)
+	await tween.finished
+	_show_next_line()
 
 func _show_next_line():
+	if not started:
+		started = true
+	elif is_animating:
+		return
+		
 	if current_dialogue_index >= dialogue_lines.size():
 		_end_dialogue()
 		return
-
 	continue_label.visible = false
 	is_animating = true
 	dialogue_label.text = ""
@@ -67,7 +73,9 @@ func _show_next_line():
 	is_animating = false
 	continue_label.visible = true
 
-func _input(event):
+func _unhandled_input(event):
+	if not continue_label.visible:
+		return
 	if event.is_action_pressed("ui_accept") or (event is InputEventMouseButton and event.pressed):
 		if is_animating:
 			dialogue_label.text = dialogue_lines[current_dialogue_index]
@@ -78,7 +86,6 @@ func _input(event):
 			_show_next_line()
 
 func _end_dialogue():
-	# ✅ idle continue de jouer en boucle, pas besoin de le relancer
 	continue_label.text = "[ Press any key to continue... ]"
 	continue_label.visible = true
 
@@ -86,8 +93,9 @@ func _end_dialogue():
 	set_process_input(false)
 	await get_tree().create_timer(1.0).timeout
 
-	PuzzleData.next_puzzle()
-	if PuzzleData.is_finished():
-		get_tree().change_scene_to_file("res://scenes/broken_gallery.tscn")
-	else:
-		get_tree().change_scene_to_file("res://scenes/MainPuzzle.tscn")
+	# ✅ Marquer le puzzle comme terminé (BON INDEX)
+	PuzzleData.solved_puzzles[PuzzleData.current_index] = true
+	print("Solved:", PuzzleData.solved_puzzles)
+
+	# ✅ Toujours retourner à la galerie
+	get_tree().change_scene_to_file("res://scenes/broken_gallery.tscn")

@@ -6,6 +6,7 @@ var puzzles = [
 	"res://assets/paintings/puzzle3.jpg"
 ]
 
+var solved_puzzles = [false, false, false]
 var current_index := 0
 
 func get_current_image():
