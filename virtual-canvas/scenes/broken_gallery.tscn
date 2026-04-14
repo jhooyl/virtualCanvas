@@ -2098,6 +2098,7 @@ position = Vector2(37, -13)
 shape = SubResource("RectangleShape2D_t0pae")
 
 [node name="Camera2D" type="Camera2D" parent="Amelia" unique_id=776145692]
+zoom = Vector2(0.65, 0.65)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Amelia" unique_id=2060048486]
 position = Vector2(33.25, -31.500002)

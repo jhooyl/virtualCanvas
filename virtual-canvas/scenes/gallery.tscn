@@ -2080,6 +2080,7 @@ scale = Vector2(1.4609352, 1.433595)
 polygon = PackedVector2Array(-1, -7, -8, -1, -8, 2, 0, 9, 0, 10, 7, 3, 8, 3, -1, -8)
 
 [node name="Amelia" type="CharacterBody2D" parent="." unique_id=2074516992]
+z_index = 1
 script = ExtResource("2_8naax")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Amelia" unique_id=651477836]
@@ -2087,6 +2088,7 @@ position = Vector2(29, -248)
 shape = SubResource("RectangleShape2D_mdy1u")
 
 [node name="Camera2D" type="Camera2D" parent="Amelia" unique_id=462778031]
+zoom = Vector2(0.65, 0.65)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Amelia" unique_id=1984803986]
 position = Vector2(29, -266)
@@ -2104,6 +2106,7 @@ wait_time = 0.45
 one_shot = true
 
 [node name="Guide" type="CharacterBody2D" parent="." unique_id=809760894]
+z_index = 1
 script = ExtResource("6_mkcid")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Guide" unique_id=559650571]
