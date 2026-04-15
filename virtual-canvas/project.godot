@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="virtualCanvas"
-run/main_scene="uid://c5u48d72tx1nt"
+run/main_scene="uid://2ti1mw6nfldh"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://assets/other/icon.svg"
 
