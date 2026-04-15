@@ -14,6 +14,7 @@
 [ext_resource type="Script" uid="uid://ccerwyb014cxm" path="res://scenes/guide.gd" id="7_l30nw"]
 [ext_resource type="Texture2D" uid="uid://dmbq0fuq1ywn1" path="res://assets/avatars/Adam_run_16x16.png" id="8_t0pae"]
 [ext_resource type="FontFile" uid="uid://dkxl7nnt1buob" path="res://fonts/PressStart2P-Regular.ttf" id="14_0n8sb"]
+[ext_resource type="Script" uid="uid://c5fiq0hl76hmh" path="res://scripts/labelBroken.gd" id="15_b21jj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k7wtj"]
 texture = ExtResource("1_mbts6")
@@ -2268,6 +2269,7 @@ offset_right = 1175.0
 offset_bottom = 239.0
 theme_override_fonts/font = ExtResource("14_0n8sb")
 theme_override_font_sizes/font_size = 15
+script = ExtResource("15_b21jj")
 metadata/_edit_use_anchors_ = true
 
 [connection signal="body_entered" from="gallery/paintings/painting1/Area2D" to="gallery/paintings/painting1/Area2D" method="_on_body_entered"]

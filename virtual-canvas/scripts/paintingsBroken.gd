@@ -19,10 +19,11 @@ func _on_body_entered(body):
 		show_message()
 
 func show_message():
-	ui_label.text = "Resolve those puzzles to be able to exit this world"
+	ui_label.text = "Resolve those puzzles 
+					to be able to exit this world"
 	ui_label.visible = true
 	
-	# ✅ IMPORTANT : PAS DE +1
+	# IMPORTANT : PAS DE +1
 	PuzzleData.current_index = painting_index
 	
 	await get_tree().create_timer(3.0).timeout
