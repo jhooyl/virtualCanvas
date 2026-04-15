@@ -1974,7 +1974,7 @@ sources/0 = SubResource("TileSetAtlasSource_543d2")
 sources/1 = SubResource("TileSetAtlasSource_li7wd")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mtg1g"]
-size = Vector2(621.6057, 810.0001)
+size = Vector2(621.6057, 632.9034)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mdy1u"]
 size = Vector2(72, 94)
@@ -3089,7 +3089,7 @@ z_index = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="gallery/paintings/painting1/Area2D" unique_id=813004828]
 z_index = 1
-position = Vector2(8.038086, 207.58057)
+position = Vector2(8.038086, 119.032166)
 shape = SubResource("RectangleShape2D_mtg1g")
 
 [node name="painting2" type="Sprite2D" parent="gallery/paintings" unique_id=596837116]
